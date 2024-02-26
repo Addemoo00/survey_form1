@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take a moment to fill out this survey.</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="age" id="age-label">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" min="18" max="100" required>
+      </div>
+      <div class="form-group">
+        <label for="dropdown" id="dropdown-label">Favorite Color:</label>
+        <select id="dropdown" required>
+          <option value="">Select</option>
+          <option value="blue">Blue</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label id="radio-label">Would you recommend this product?</label>
+        <input type="radio" name="recommend" value="yes" id="yes"><label for="yes">Yes</label>
+        <input type="radio" name="recommend" value="no" id="no"><label for="no">No</label>
+      </div>
+      <div class="form-group">
+        <label id="checkbox-label">Which features do you like?</label>
+        <input type="checkbox" name="features" value="design" id="design"><label for="design">Design</label>
+        <input type="checkbox" name="features" value="functionality" id="functionality"><label for="functionality">Functionality</label>
+        <input type="checkbox" name="features" value="price" id="price"><label for="price">Price</label>
+      </div>
+      <div class="form-group">
+        <label for="comments" id="comments-label">Additional Comments:</label>
+        <textarea id="comments" placeholder="Enter your comments"></textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
